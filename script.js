@@ -1,6 +1,8 @@
-const listItem = document.getElementById("lists");
-
 function getElement() {
-    element = document.querySelector('#shopB');
-    console.log('選ばれたのは' + element.textContent + 'でした');
+    elements = document.querySelectorAll('.shop li');
+    //※lenはlengthの略
+    let len = elements.length;
+    for (let i = 0; i < len; i++){
+        console.log(elements.item(i).textContent);
+    }
 }
